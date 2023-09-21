@@ -24,13 +24,13 @@ project "Dear_ImGui"
     }
 
 
-    filter "configuration:Debug"
+    filter "configurations:Debug"
         systemversion "latest"
         buildoptions "/MTd"
 		defines "_DEBUG"
 		symbols "On"
 
-	filter "configuration:Release"
+	filter "configurations:Release"
 	    systemversion "latest"
 		buildoptions "/MT"
         defines "NDEBUG"
